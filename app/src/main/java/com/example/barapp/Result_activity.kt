@@ -3,34 +3,19 @@ package com.example.barapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ContextMenu
 import android.view.Menu
-import android.view.MenuItem
-import android.view.View
-import android.widget.TextView
-import android.widget.Toast
-import androidx.core.app.NavUtils
 import com.example.barapp.databinding.ActivityMainBinding
+import com.example.barapp.databinding.ActivityResultBinding
 
-
-class MainActivity : AppCompatActivity() {
-    private lateinit var b: ActivityMainBinding
-
-    companion object {
-        var ID_OPT1 = Menu.FIRST
-        var ID_OPTION2 = Menu.FIRST + 1
-
-    }
+class Result_activity : AppCompatActivity() {
+    private lateinit var b: ActivityResultBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        b = ActivityMainBinding.inflate(layoutInflater)
+        b = ActivityResultBinding.inflate(layoutInflater)
         setContentView(b.root)
 
-
-
-
         val actionBar = supportActionBar
-        actionBar!!.title = "    Sing up"
+        actionBar!!.title = "  "
 
         actionBar.setIcon(R.drawable.ic_atras)
 
@@ -38,8 +23,7 @@ class MainActivity : AppCompatActivity() {
         actionBar.setHomeButtonEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true) // para que el home sea una flecha
 
-        b.btRegister.setOnClickListener { val myintent = Intent (this, Result_activity::class.java)
-        startActivity(myintent)}
+
 
 
     }
@@ -47,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)
-        menuInflater.inflate(R.menu.main_menu, menu)
+        menuInflater.inflate(R.menu.menu2, menu)
         return true
 
 
@@ -55,8 +39,19 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    }
+}
 
 
 //        return super.onOptionsItemSelected(item)
+
+
+
+
+
+
+
+
+
+
+
 

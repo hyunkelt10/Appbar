@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Telefono">
+        <item>casa</item>
+        <item>oficina</item>
+        <item>movil</item>
+
+
+
+
+
+
+    </string-array>
+
+
+    <string-array name="mail">
+        <item>personal</item>
+        <item>trabajo</item>
+
+
+
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>
